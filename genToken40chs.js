@@ -2,8 +2,10 @@ var rand = function() {
     return Math.random().toString(36).substr(2,10);
 };
 
-var token = function() {
-    return rand() + rand() + rand() + rand(); 
-};
+var rand2 = function(){
+    return Math.random();
+}
 
-console.log(token(),token().length);
+var token = function() {
+    return rand() + rand() + rand() +"."+ rand2()+rand2(); 
+};
